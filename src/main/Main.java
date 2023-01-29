@@ -16,15 +16,15 @@ public class Main {
 
         Estudiante[] listadoEstudiantes = {
                 new Informatica("Daniel"),
-                //new IngenieriaIndustrial("Camila"),
-                //new Negocios("Nicolas")  
+                //new Industrial("Camila"),
+                //new Administrador("Nicolas")  
         };
         //Principio Dependency Inversion
         verMateriasEstudiantes(listadoEstudiantes);
         EnvioMaterial material = new EnvioMaterial(new EmailOutlook(), new Envio());
         material.enviarMaterialEstudiante(new Informatica("Daniel"));
-        //material.enviarMaterialEstudiante(new IngenieriaIndustrial("Camila"));
-        //material.enviarMaterialEstudiante(new Negocios("Nicolas"));
+        //material.enviarMaterialEstudiante(new Industrial("Camila"));
+        //material.enviarMaterialEstudiante(new Administrador("Nicolas"));
 
         ServicioGuardar servicio = new ServicioGuardar(new MySQL());
         servicio.guardar();
