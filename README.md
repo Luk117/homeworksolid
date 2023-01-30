@@ -1,4 +1,5 @@
 # Principios SOLID 
+Lukas Nieto, Maria Juliana Giraldo y Natalia Mayorga
 
 ## Principio Single Responsability
 Se aplicó a todas las clases/entiddes con el fin de que tuvieran una sola tarea. Este se puede ver
